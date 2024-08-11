@@ -3,6 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
@@ -13,10 +17,18 @@
   <header class="body-container__header main-header">
     <div class="main-header__logo logo">
       <a class="main-header__logo-image" href="#">
-        <img src="images/logotype-icon.svg" width="33" height="38" alt="Кэт энерджи иконка»">
+        <picture>
+          <source media="(min-width: 1200px)" width="70" height="59" type="image/svg+xml" srcset="images/logotype-icon-desktop.svg">
+          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logotype-icon-tablet.svg">
+          <img src="images/logotype-icon.svg" width="33" height="38" alt="Кэт энерджи логотип">
+        </picture>
       </a>
       <a class="main-header__logo-text" href="#">
-        <img src="images/logotype-text.svg" width="101" height="18" alt="Кэт энерджи текст»">
+        <picture>
+          <source media="(min-width: 1200px)" width="118" height="21" type="image/svg+xml" srcset="images/logotype-text-desktop.svg">
+          <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logotype-text-tablet.svg">
+          <img src="images/logotype-text.svg" width="101" height="18" alt="Кэт энерджи название">
+        </picture>
       </a>
     </div>
     <nav class="main-header__nav main-nav">
@@ -53,7 +65,11 @@
           <ul class="cards__list cards-list">
             <li class="cards__item card">
               <a class="card__images-link" href="#">
-                <img class="card__image" src="images/catalog-pro500.png" width="68" height="86" alt="Cat energy pro 500 грамм">
+                <picture>
+                  <source media="(min-width: 1200px)" width="161" height="172" type="image/png" srcset="images/catalog-chiken500-desktop@1x.png 1x, images/catalog-chiken500-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" width="161" height="172" type="image/png" srcset="images/catalog-chiken500-tablet@1x.png 1x, images/catalog-chiken500-tablet@2x.png 2x">
+                  <img class="card__image" src="images/catalog-chiken500-mobile@1x.png" srcset="images/catalog-chiken500-mobile@2x.png 2x" width="68" height="86" alt="Cat energy pro chicken 500 грамм">
+                </picture>
                 <span class="visually-hidden">Cat energy pro 500 грамм</span>
               </a>
               <div class="card__description-container">
@@ -75,7 +91,11 @@
             </li>
             <li class="cards__item card">
               <a class="card__images-link" href="#">
-                <img class="card__image" src="images/catalog-pro1000.png" width="68" height="86" alt="Cat energy pro 1000 грамм">
+                <picture>
+                  <source media="(min-width: 1200px)" width="172" height="196" type="image/png" srcset="images/catalog-chiken1000-desktop@1x.png 1x, images/catalog-chiken1000-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" width="168" height="206" type="image/png" srcset="images/catalog-chiken1000-tablet@1x.png 1x, images/catalog-chiken1000-tablet@2x.png 2x">
+                  <img class="card__image" src="images/catalog-chiken1000-mobile@1x.png" srcset="images/catalog-chiken1000-mobile@2x.png 2x" width="84" height="100" alt="Cat energy pro chicken 1000 грамм">
+                </picture>
                 <span class="visually-hidden">Cat energy pro 1000 грамм</span>
               </a>
               <div class="card__description-container">
@@ -84,11 +104,11 @@
                 </a>
                 <dl class="card__description">
                   <dt>Масса</dt>
-                  <dd>500 г</dd>
+                  <dd>1000 г</dd>
                   <dt>Вкус</dt>
                   <dd>Курица</dd>
                   <dt>Цена</dt>
-                  <dd>700 ₽</dd>
+                  <dd>1000 ₽</dd>
                 </dl>
               </div>
               <div class="card__button-container">
@@ -97,7 +117,11 @@
             </li>
             <li class="cards__item card">
               <a class="card__images-link" href="#">
-                <img class="card__image" src="images/catalog-fish-pro500.png" width="68" height="86" alt="Cat energy pro 500 грамм">
+                <picture>
+                  <source media="(min-width: 1200px)" width="163" height="174" type="image/png" srcset="images/catalog-fish500-desktop@1x.png 1x, images/catalog-fish500-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" width="163" height="174" type="image/png" srcset="images/catalog-fish500-tablet@1x.png 1x, images/catalog-fish500-tablet@2x.png 2x">
+                  <img class="card__image" src="images/catalog-fish500-mobile@1x.png" srcset="images/catalog-fish500-mobile@2x.png 2x" width="68" height="78" alt="Cat energy pro fish 500 грамм">
+                </picture>
                 <span class="visually-hidden">Cat energy pro 500 грамм</span>
               </a>
               <div class="card__description-container">
@@ -108,7 +132,7 @@
                   <dt>Масса</dt>
                   <dd>500 г</dd>
                   <dt>Вкус</dt>
-                  <dd>Курица</dd>
+                  <dd>Рыба</dd>
                   <dt>Цена</dt>
                   <dd>700 ₽</dd>
                 </dl>
@@ -119,7 +143,11 @@
             </li>
             <li class="cards__item card">
               <a class="card__images-link" href="#">
-                <img class="card__image" src="images/catalog-fish-pro1000.png" width="68" height="86" alt="Cat energy pro 1000 грамм">
+                <picture>
+                  <source media="(min-width: 1200px)" width="172" height="196" type="image/png" srcset="images/catalog-fish1000-desktop@1x.png 1x, images/catalog-fish1000-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" width="168" height="200" type="image/png" srcset="images/catalog-fish1000-tablet@1x.png 1x, images/catalog-fish1000-tablet@2x.png 2x">
+                  <img class="card__image" src="images/catalog-fish1000-mobile@1x.png" srcset="images/catalog-fish1000-mobile@2x.png 2x" width="84" height="100" alt="Cat energy pro fish 1000 грамм">
+                </picture>
                 <span class="visually-hidden">Cat energy pro 1000 грамм</span>
               </a>
               <div class="card__description-container">
@@ -128,9 +156,9 @@
                 </a>
                 <dl class="card__description">
                   <dt>Масса</dt>
-                  <dd>500 г</dd>
+                  <dd>1000 г</dd>
                   <dt>Вкус</dt>
-                  <dd>Курица</dd>
+                  <dd>Рыба</dd>
                   <dt>Цена</dt>
                   <dd>700 ₽</dd>
                 </dl>
@@ -141,7 +169,11 @@
             </li>
             <li class="cards__item card">
               <a class="card__images-link" href="#">
-                <img class="card__image" src="images/catalog-slim500.png" width="68" height="86" alt="Cat energy slim 500 грамм">
+                <picture>
+                  <source media="(min-width: 1200px)" width="161" height="171" type="image/png" srcset="images/catalog-buck500-desktop@1x.png 1x, images/catalog-buck500-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" width="161" height="171" type="image/png" srcset="images/catalog-buck500-tablet@1x.png 1x, images/catalog-buck500-tablet@2x.png 2x">
+                  <img class="card__image" src="images/catalog-buck500-mobile@1x.png" srcset="images/catalog-buck500-mobile@2x.png 2x" width="68" height="78" alt="Cat energy slim гречка 500 грамм">
+                </picture>
                 <span class="visually-hidden">Cat energy slim 500 грамм</span>
               </a>
               <div class="card__description-container">
@@ -152,7 +184,7 @@
                   <dt>Масса</dt>
                   <dd>500 г</dd>
                   <dt>Вкус</dt>
-                  <dd>Курица</dd>
+                  <dd>Гречка</dd>
                   <dt>Цена</dt>
                   <dd>700 ₽</dd>
                 </dl>
@@ -163,7 +195,11 @@
             </li>
             <li class="cards__item card">
               <a class="card__images-link" href="#">
-                <img class="card__image" src="images/catalog-slim1000.png" width="68" height="86" alt="Cat energy slim 1000 грамм">
+                <picture>
+                  <source media="(min-width: 1200px)" width="172" height="196" type="image/png" srcset="images/catalog-buck1000-desktop@1x.png 1x, images/catalog-buck1000-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" width="168" height="200" type="image/png" srcset="images/catalog-buck1000-tablet@1x.png 1x, images/catalog-buck1000-tablet@2x.png 2x">
+                  <img class="card__image" src="images/catalog-buck1000-mobile@1x.png" srcset="images/catalog-buck1000-mobile@2x.png 2x" width="84" height="100" alt="Cat energy slim гречка 1000 грамм">
+                </picture>
                 <span class="visually-hidden">Cat energy slim 1000 грамм</span>
               </a>
               <div class="card__description-container">
@@ -172,11 +208,11 @@
                 </a>
                 <dl class="card__description">
                   <dt>Масса</dt>
-                  <dd>500 г</dd>
+                  <dd>1000 г</dd>
                   <dt>Вкус</dt>
-                  <dd>Курица</dd>
+                  <dd>Гречка</dd>
                   <dt>Цена</dt>
-                  <dd>700 ₽</dd>
+                  <dd>1000 ₽</dd>
                 </dl>
               </div>
               <div class="card__button-container">
@@ -185,7 +221,11 @@
             </li>
             <li class="cards__item card">
               <a class="card__images-link" href="#">
-                <img class="card__image" src="images/catalog-rice-slim500.png" width="68" height="86" alt="Cat energy slim 500 грамм">
+                <picture>
+                  <source media="(min-width: 1200px)" width="163" height="174" type="image/png" srcset="images/catalog-rice500-desktop@1x.png 1x, images/catalog-rice500-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" width="163" height="174" type="image/png" srcset="images/catalog-rice500-tablet@1x.png 1x, images/catalog-rice500-tablet@2x.png 2x">
+                  <img class="card__image" src="images/catalog-rice500-mobile@1x.png" srcset="images/catalog-rice500-mobile@2x.png 2x" width="72" height="84" alt="Cat energy slim рис 500 грамм">
+                </picture>
                 <span class="visually-hidden">Cat energy slim 500 грамм</span>
               </a>
               <div class="card__description-container">
@@ -196,7 +236,7 @@
                   <dt>Масса</dt>
                   <dd>500 г</dd>
                   <dt>Вкус</dt>
-                  <dd>Курица</dd>
+                  <dd>Рис</dd>
                   <dt>Цена</dt>
                   <dd>700 ₽</dd>
                 </dl>
@@ -296,7 +336,11 @@
           </address>
         </div>
         <div class="map__container">
-          <img class="map__image map-background" src="images/map-background.jpg" width="320" height="362" alt="Карта проезда">
+          <picture>
+            <source media="(min-width: 1200px)" width="1440" height="400" type="image/jpg" srcset="images/map-background-desktop@1x.jpg 1x, images/map-background-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" width="768" height="400" type="image/jpg" srcset="images/map-background-tablet@1x.jpg 1x, images/map-background-tablet@2x.jpg 2x">
+            <img class="map__image map-background" src="images/map-background-mobile@1x.jpg" srcset="images/map-background-mobile@2x.jpg 2x" width="320" height="362" alt="Карта проезда">
+          </picture>
         </div>
       </section>
     </div>
