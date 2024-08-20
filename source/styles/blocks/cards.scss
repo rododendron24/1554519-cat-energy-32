@@ -1,0 +1,40 @@
+.cards__title {
+  @include title;
+  display: block;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 41px;
+}
+
+.cards__title-container {
+  padding-left: 20px;
+}
+
+.cards__list {
+  padding: 0;
+  margin: 0;
+}
+
+.cards__item {
+  padding-top: 20px 20px 0 20px;
+}
+
+.cards__item-add {
+  @include flex-center;
+  flex-direction: column;
+}
+
+
+.cards__line-container {
+  @include flex-center;
+  padding: 0;
+  margin: 0;
+}
+
+.cards__line {
+  width: 320px;
+  height: 1px;
+  background-color: $special-grey-2;
+  border: 0;
+  margin: 0;
+}

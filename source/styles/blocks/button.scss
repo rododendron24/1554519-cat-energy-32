@@ -1,0 +1,17 @@
+
+
+.button {
+  @include button-text;
+  background-color: $bg-basic-green;
+  color: #ffffff;
+}
+
+.button--primary {
+  background-color: $bg-basic-green;
+  color: $bg-basic-white;
+}
+
+.button--secondary {
+  background-color: $basic-grey;
+  color: $base-color-text;
+}

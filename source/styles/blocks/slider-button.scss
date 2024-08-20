@@ -1,0 +1,5 @@
+.slider-button__icon {
+  @include flex-center;
+  position: absolute;
+  bottom: 50%;
+}

@@ -1,0 +1,13 @@
+.map__partners {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 26px 20px;
+}
+
+.map__partners--catalog {
+  background-color: $basic-grey;
+}
+
+.map__container {
+  background-color: $basic-grey;
+}

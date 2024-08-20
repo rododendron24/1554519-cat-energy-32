@@ -1,0 +1,33 @@
+.promo-banner {
+  display: flex;
+  background-image: url("../../images/promo-background-mobile@1x.png");
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 290px;
+  margin: 0 20px;
+  position: relative;
+}
+
+.promo-banner::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 83px;
+  margin: auto;
+  margin-bottom: 48px;
+  margin-top: 59px;
+  background-image: url("../../images/icon_gift.png");
+  position: absolute;
+}
+
+.promo-banner__banner-description {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $bg-basic-white;
+  text-align: center;
+  display: block;
+  padding-top: 187px;
+}
