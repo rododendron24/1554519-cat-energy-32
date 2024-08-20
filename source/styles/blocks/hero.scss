@@ -1,0 +1,55 @@
+
+
+.hero__container {
+  display: block;
+  background-image: url("../../images/hero-background-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  margin-bottom: 138px;
+  padding: 0;
+  width: 320px;
+  height: 302px;
+}
+
+
+.hero__banner {
+  @include flex-center;
+  padding: 0;
+  margin: 0 auto;
+  min-height: 270px;
+}
+
+.hero__title {
+  @include title;
+  color: $bg-basic-white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 25px;
+}
+
+.hero__description {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: $bg-basic-white;
+  text-align: center;
+  display: block;
+  margin: 0;
+  margin-bottom: 29px;
+  text-transform: uppercase;
+}
+
+
+.hero__button {
+  @include flex-center;
+  @include button-text;
+  text-align: center;
+  padding: 10px 64px;
+  text-decoration: none;
+  margin: 0 20px;
+}

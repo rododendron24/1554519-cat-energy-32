@@ -1,0 +1,76 @@
+.subscribe {
+  padding: 0 20px;
+}
+
+.subscribe__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  display: block;
+  padding: 40px 0 32px;
+  margin: 0;
+  color: $base-color-text2;
+}
+
+.subscribe__description {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  display: block;
+  color: $base-color-text2;
+  text-align: center;
+}
+
+
+.subscribe__form-container {
+  @include flex-center;
+  flex-direction: column;
+  margin-top: 24px;
+  gap: 16px;
+}
+
+.subscribe__form {
+  width: auto;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+}
+
+.subscribe__field {
+  width: 280px;
+  min-height: 56px;
+  border: 1px solid $special-grey;
+  background: $bg-basic-white;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.subscribe__field::placeholder {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: $base-color-text;
+  text-transform: uppercase;
+  display: block;
+  padding: 13px;
+}
+
+
+.subscribe__button {
+  @include button-text;
+  color: $bg-basic-white;
+  text-transform: uppercase;
+  background-color: $bg-basic-green;
+  border: 0;
+  min-width: 280px;
+  min-height: 56px;
+  text-align: center;
+  padding: 15px 0;
+}

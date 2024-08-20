@@ -1,0 +1,61 @@
+
+
+.steps__title {
+  @include title-section;
+}
+
+.steps__description {
+  @include base-text;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-self: center;
+}
+
+.steps__container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 49px;
+}
+
+.steps__list {
+  padding: 0;
+  margin: 0;
+}
+
+.steps__item {
+  display: flex;
+  gap: 20px;
+}
+
+.steps__item::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: $bg-basic-green;
+  color: $bg-basic-white;
+  background-position: center;
+  display: flex;
+  align-self: flex-start;
+  flex-shrink: 0;
+}
+
+.steps__item--first::before {
+  background-image: url("../../images/icon_leaf@1x.png");
+  background-repeat: no-repeat;
+}
+
+.steps__item--second::before {
+  background-image: url("../../images/icon_water@1x.png");
+  background-repeat: no-repeat;
+}
+
+.steps__item--third::before {
+  background-image: url("../../images/icon_eat@1x.png");
+  background-repeat: no-repeat;
+}
+
+.steps__item--fourth::before {
+  background-image: url("../../images/icon_ring@1x.png");
+  background-repeat: no-repeat;
+}

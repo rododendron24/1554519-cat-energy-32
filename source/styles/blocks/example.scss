@@ -1,0 +1,57 @@
+
+
+.example__container {
+  padding: 25px 20px 40px;
+  background-color: $basic-grey2;
+  display: flex;
+  flex-direction: column;
+}
+
+.example__title {
+  @include title-section;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.example__description {
+  @include base-text;
+  margin: 0;
+  padding: 40px 0 20px;
+  display: block;
+}
+
+.example__summary-text {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $base-color-text2;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+}
+
+.example__summary-container {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.example__button {
+  @include flex-center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0 auto;
+}
+/*
+.example__image--before {
+  position: absolute;
+  bottom: 0;
+}
+
+.example__image--after {
+  position: absolute;
+  bottom: 0;
+} */

@@ -1,0 +1,65 @@
+.extra__container {
+  margin: 0;
+  padding: 0 20px;
+}
+
+.extra__list {
+  padding: 0;
+  margin: 0;
+}
+
+
+.extra__title {
+  @include title-section-catalog;
+  display: block;
+  padding: 25px 0 36px 20px;
+  margin: 0;
+  color: $base-color-text2;
+}
+
+.extra__item-title {
+  @include title-extra;
+  color: $special-dark-grey-2;
+  text-decoration: none;
+  display: block;
+  padding: 13px 0;
+}
+
+.extra__description {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.extra__button-container {
+  @include flex-center;
+  padding-bottom: 19px;
+}
+
+.extra__button {
+  @include button-text;
+  text-transform: uppercase;
+  min-width: 280px;
+  min-height: 40px;
+  padding: 10px 0;
+  border: none;
+}
+
+.extra__line-container {
+  @include flex-center;
+  padding: 0;
+  margin: 0;
+}
+
+.extra__line {
+  width: 280px;
+  height: 1px;
+  background-color: $special-grey;
+  border: 0;
+  margin: 0;
+}
