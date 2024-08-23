@@ -44,7 +44,6 @@
   text-transform: uppercase;
 }
 
-
 .hero__button {
   @include flex-center;
   @include button-text;
@@ -53,4 +52,3 @@
   text-decoration: none;
   margin: 0 20px;
 }
-
