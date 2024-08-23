@@ -6,10 +6,13 @@
 
 
 /* BLOCKS */
+@import "./blocks/page.scss";
+@import "./blocks/body.scss";
 @import "./blocks/button.scss";
+@import "./blocks/logo-text.scss";
+@import "./blocks/logo-header-text.scss";
 @import "./blocks/visually-hidden.scss";
 @import "./blocks/base-text.scss";
-@import "./blocks/body.scss";
 @import "./blocks/body-container.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/burger.scss";

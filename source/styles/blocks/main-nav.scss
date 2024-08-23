@@ -10,7 +10,8 @@
 
 .main-nav__item {
   @include flex-center;
-  padding: 22px 0 24px;
+  flex-direction: column;
+  padding: 0;
 }
 
 
@@ -22,4 +23,31 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $base-color-text2;
+  padding-top: 22px;
+  padding-bottom: 24px;
+}
+
+
+.main-nav__link--current {
+  span {
+    border-bottom: 2px solid $basic-green;
+    padding-bottom: 8px;
+    z-index: 1;
+  }
+}
+
+.main-nav__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-nav__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-nav__line {
+  width: 320px;
+  height: 1px;
+  background-color: $basic-grey3;
+  border: 0;
+  margin: 0;
 }

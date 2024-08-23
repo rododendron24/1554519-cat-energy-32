@@ -2,4 +2,24 @@
   position: relative;
   margin: 0;
   padding: 0;
+  width: 280px;
+  height: 256px;
+}
+
+.slider__image {
+  position: absolute;
+}
+
+.slider::before {
+  @include flex-center;
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 256px;
+  border-radius: 2px;
+  background-color: $special-dark-grey-4;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }

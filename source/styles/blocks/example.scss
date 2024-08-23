@@ -12,6 +12,7 @@
   display: block;
   margin: 0;
   padding: 0;
+  color: $base-color-text2;
 }
 
 .example__description {
@@ -37,14 +38,6 @@
   position: relative;
 }
 
-.example__button {
-  @include flex-center;
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-  padding: 0;
-  margin: 0 auto;
-}
 /*
 .example__image--before {
   position: absolute;
