@@ -2,6 +2,11 @@
 
 .steps__title {
   @include title-section;
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+  color: $base-color-text2;
 }
 
 .steps__description {
@@ -15,7 +20,7 @@
 .steps__container {
   display: flex;
   flex-direction: column;
-  padding: 20px 20px 49px;
+  padding: 0 20px 49px;
 }
 
 .steps__list {
@@ -41,21 +46,29 @@
 }
 
 .steps__item--first::before {
-  background-image: url("../../images/icon_leaf@1x.png");
+  background-image: url("../../icons/stack.svg#icon_leaf");
   background-repeat: no-repeat;
+  display: block;
+  background-size: 30px 32px;
 }
 
 .steps__item--second::before {
-  background-image: url("../../images/icon_water@1x.png");
+  background-image: url("../../icons/stack.svg#icon_water");
   background-repeat: no-repeat;
+  display: block;
+  background-size: 26px 28px;
 }
 
 .steps__item--third::before {
-  background-image: url("../../images/icon_eat@1x.png");
+  background-image: url("../../icons/stack.svg#icon_eat");
   background-repeat: no-repeat;
+  display: block;
+  background-size: 25px 30px;
 }
 
 .steps__item--fourth::before {
-  background-image: url("../../images/icon_ring@1x.png");
+  background-image: url("../../icons/stack.svg#icon_ring");
   background-repeat: no-repeat;
+  display: block;
+  background-size: 26px 31px;
 }

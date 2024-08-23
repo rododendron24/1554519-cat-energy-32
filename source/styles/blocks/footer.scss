@@ -29,6 +29,39 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  display: block;
+}
+
+.footer__text-link {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  display: block;
+  text-decoration: none;
+  color: $base-color-text;
+}
+
+.footer__text-link:active {
+  color: $base-color-text;
+  opacity: 0.3;
+}
+
+.footer__dev-logo-icon {
+  mask-image: url("../../icons/stack.svg#logo-academy");
+  display: block;
+  width: 27px;
+  height: 34px;
+  background-color: $special-dark-grey-4;
+}
+
+.footer__dev-logo-icon:hover {
+  background-color: $basic-green;
+}
+
+.footer__dev-logo-icon:active {
+  background-color: $basic-green;
+  opacity: 0.3;
 }
 
 .footer__line-container {
