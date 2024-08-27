@@ -68,7 +68,7 @@
     background-image: none;
     justify-content: flex-start;
     margin: 0;
-    margin-top: 50px;
+    margin-top: 45px;
     margin-bottom: 290px;
     padding: 0;
     position: relative;
@@ -79,6 +79,7 @@
     flex-direction: column;
     justify-content: flex-start;
     padding-left: 120px;
+    padding-top: 5px;
   }
 
   .hero__title {
@@ -120,6 +121,7 @@
     min-height: 54px;
     margin: 0;
     margin-left: 120px;
+    margin-top: 45px;
     top: 50%;
     z-index: 1;
   }
@@ -130,5 +132,21 @@
     margin: 0 auto;
     min-width: 709px;
     min-height: 609px;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: $desktop-width) {
+  .hero {
+    position: relative;
+  }
+
+  .hero__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 138px;
+    padding: 0;
   }
 }
