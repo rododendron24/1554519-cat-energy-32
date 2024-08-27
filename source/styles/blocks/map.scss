@@ -11,3 +11,19 @@
 .map__container {
   background-color: $basic-grey;
 }
+
+/* TABLETS */
+@media (min-width: $tablet-width) {
+  .map__partners {
+    display: flex;
+    align-items: center;
+    padding: 0 70px;
+    justify-content: space-between;
+    min-height: 200px;
+  }
+
+  .map__container {
+    min-width: 768px;
+    min-height: 400px;
+  }
+}
