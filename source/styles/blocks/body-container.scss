@@ -5,5 +5,16 @@
   background-color: $bg-basic-white;
 }
 
+/* TABLET */
+@media (min-width: $tablet-width) {
+  .body-container {
+    max-width: 1439px;
+  }
+}
 
-
+/* DESKTOP */
+@media (min-width: $desktop-width) {
+  .body-container {
+    min-width: 1440px;
+  }
+}

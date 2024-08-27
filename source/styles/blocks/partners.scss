@@ -37,6 +37,11 @@
     max-width: 200px;
     padding: 0;
     margin: 0;
+
+    span {
+      display: block;
+      max-width: 110px;
+    }
   }
 
   .partners__address-description {
