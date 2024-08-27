@@ -77,3 +77,42 @@
   border: 0;
   margin: 0;
 }
+
+
+/* TABLETS */
+@media (min-width: $tablet-width) {
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    background-color: $basic-grey;
+    padding: 50px 30px;
+  }
+
+  .footer__dev-logo {
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer__line-container {
+    display: none;
+  }
+
+  .footer__line {
+    display: none;
+  }
+
+  .footer__social {
+    padding: 0;
+  }
+
+  .footer__logo {
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer__text-link {
+    padding-right: 23px;
+  }
+}
