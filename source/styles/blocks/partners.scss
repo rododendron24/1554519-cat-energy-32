@@ -5,6 +5,7 @@
   text-transform: uppercase;
   display: block;
   padding: 0;
+  padding-right: 5px;
   margin: 0;
 }
 
@@ -22,4 +23,37 @@
 .partners__address {
   margin: 0;
   padding: 0;
+}
+
+
+/* TABLETS */
+@media (min-width: $tablet-width) {
+  .partners__title {
+    font-size: 20px;
+    line-height: 26px;
+    color: $special-dark-grey-3;
+    text-transform: uppercase;
+    display: block;
+    max-width: 200px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .partners__address-description {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+    max-width: 160px;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+
+    span {
+      display: block;
+      margin-top: 20px;
+    }
+  }
 }

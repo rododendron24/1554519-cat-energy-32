@@ -103,7 +103,7 @@
 .products-view__list-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   background-color: $basic-grey;
   margin: 20px 0;
 }
@@ -120,3 +120,106 @@
   background-color: $special-grey-3;
   border: 0;
 }
+
+/* TABLETS */
+@media (min-width: $tablet-width) {
+  .products-view__line-container {
+    display: none;
+  }
+
+  .products-view__container {
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  .products-view__list-container {
+    display: flex;
+    flex-direction: column;
+    background-color: $basic-grey;
+    margin: 0;
+    min-height: 372px;
+  }
+
+  .products-view__title {
+    text-align: left;
+    font-size: 36px;
+    padding: 0;
+  }
+
+  .products-view__title--slim {
+    padding: 90px 0 24px 53px;
+    margin: 0;
+  }
+
+  .products-view__title--pro {
+    padding: 77px 0 24px 53px;
+    margin: 0;
+  }
+
+
+  .products-view__title--slim::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    width: 200px;
+    height: 211px;
+    margin: 21px 20px 22px;
+    background-image: url("../../icons/stack.svg#slim-programm");
+  }
+
+  .products-view__title--pro::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 52%;
+    left: 56%;
+    width: 268px;
+    height: 200px;
+    background-image: url("../../icons/stack.svg#pro-programm");
+  }
+
+  .products-view__description {
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+    max-width: 390px;
+    padding: 0 0 0 53px;
+    margin: 0;
+  }
+
+  .products-view__links-container {
+    padding: 60px 0 53px 52px;
+  }
+
+  .products-view__link {
+    font-size: 20px;
+    text-decoration: none;
+    color: $base-color-text2;
+    display: inline-block; /* Строчно-блочный элемент */
+    position: relative;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+  }
+
+  .products-view__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    left: 118px;
+    margin-left: 15px;
+    bottom: 20%;
+    mask-image: url("../../icons/stack.svg#arrow-programm");
+    background-color: $base-color-text2;
+  }
+
+  .products-view__item {
+    min-height: 372px;
+    margin-bottom: 30px;
+  }
+}
+
