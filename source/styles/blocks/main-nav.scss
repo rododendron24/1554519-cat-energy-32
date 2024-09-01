@@ -92,3 +92,51 @@
     padding-top: 39px;
   }
 }
+
+/* DESKTOP */
+@media (min-width: $desktop-width) {
+  .main-nav__container {
+    min-width: 605px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .main-nav__list {
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+    z-index: 6;
+  }
+
+  .main-nav__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .main-nav__link {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $bg-basic-white;
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-nav__link--current {
+    span {
+      border-bottom: 2px solid $bg-basic-white;
+      padding-bottom: 6px;
+      z-index: 1;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 .example__container {
-  padding: 25px 20px 40px;
+  padding: 25px 20px 35px;
   background-color: $basic-grey2;
   display: flex;
   flex-direction: column;
@@ -36,6 +36,90 @@
   position: relative;
 }
 
+.example__slider {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #666666;
+    border-radius: 2px;
+    z-index: 1;
+    height: 256px;
+    width: 4px;
+  }
+
+  &:has(.example__button:hover)::before {
+    background-color: $basic-green;
+  }
+
+  &:has(.example__button:active)::before {
+    background-color: #9ecc82;
+  }
+}
+
+.example__image-wrapper {
+  overflow: hidden;
+}
+
+.example__image {
+  position: relative;
+
+  &--leftShift {
+    right: 100%;
+  }
+}
+
+.example__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $bg-basic-white;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid #666666;
+  z-index: 2;
+
+  &::after {
+    content: "";
+    background-color: #666666;
+    mask-image: url("../../icons/double-triangle-arrow.svg");
+    mask-size: 24px 18px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    height: 18px;
+    width: 24px;
+  }
+
+  &:hover {
+    border-color: $basic-green;
+
+    &::after {
+      background-color: $basic-green;
+    }
+  }
+
+  &:active {
+    border-color: #9ecc82;
+
+    &::after {
+      background-color: #9ecc82;
+    }
+  }
+}
 
 /* TABLETS */
 @media (min-width: $tablet-width) {
@@ -61,7 +145,7 @@
     font-size: 16px;
     line-height: 24px;
     margin: 0;
-    padding: 0 0 53px 30px;
+    padding: 0 0 56px 30px;
     display: block;
     max-width: 740px;
   }
@@ -70,14 +154,8 @@
     display: flex;
     justify-content: space-between;
     margin: 0;
-    margin-bottom: 150px;
     padding: 0 30px;
     max-height: 162px;
-  }
-
-  .example__slider {
-    margin: 0;
-    padding: 0;
   }
 
   .example__summary-text {
@@ -91,5 +169,222 @@
 
   .example__statistic {
     min-width: 367px;
+  }
+
+  .example__slider {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 90px;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 462px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(234, 234, 234, 1);
+      z-index: -1;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #666666;
+      border-radius: 2px;
+      z-index: 1;
+      height: 512px;
+      width: 4px;
+    }
+
+    &:has(.example__button:hover)::before {
+      background-color: $basic-green;
+    }
+
+    &:has(.example__button:active)::before {
+      background-color: #9ecc82;
+    }
+  }
+
+  .example__image-wrapper {
+    overflow: hidden;
+  }
+
+  .example__image {
+    position: relative;
+
+    &--leftShift {
+      right: 75%;
+    }
+
+    &--rightShift {
+      left: 25%;
+    }
+  }
+
+  .example__button {
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $bg-basic-white;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    border: 2px solid #666666;
+    z-index: 2;
+
+    &::after {
+      content: "";
+      background-color: #666666;
+      mask-image: url("../../icons/double-triangle-arrow.svg");
+      mask-size: 24px 18px;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+      height: 18px;
+      width: 24px;
+    }
+
+    &:hover {
+      border-color: $basic-green;
+
+      &::after {
+        background-color: $basic-green;
+      }
+    }
+
+    &:active {
+      border-color: #9ecc82;
+
+      &::after {
+        background-color: #9ecc82;
+      }
+    }
+  }
+
+  .example__slider-container {
+    background-color: $basic-grey2;
+    display: flex;
+    min-width: 768px;
+    min-height: 462px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+/* DESKTOP */
+@media (min-width: $desktop-width) {
+  .example__container {
+    padding: 69px 0;
+    background-color: $bg-basic-white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    display: block;
+    margin: 0;
+    margin-bottom: 76px;
+    padding: 0;
+    padding-left: 110px;
+    color: $base-color-text2;
+  }
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    padding: 70px 0 69px 110px;
+    display: block;
+    max-width: 543px;
+  }
+
+  .example__before-slider-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    padding-left: 110px;
+    max-height: 162px;
+    z-index: 2;
+  }
+
+  .example__summary-text {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+    display: block;
+    max-width: 436px;
+    margin-top: 55px;
+    padding: 0;
+  }
+
+
+  .example__container-top {
+    background-color: $basic-grey2;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .example__slider {
+    flex-shrink: 0;
+    max-width: 560px;
+    padding: 0;
+    padding-bottom: 85px;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      height: 512px;
+    }
+
+    &::after {
+      display: none;
+      content: "";
+      width: 100%;
+      height: 462px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: $basic-grey2;
+      z-index: -1;
+    }
+  }
+
+
+  .example__image-wrapper {
+    overflow: hidden;
+  }
+
+  .example__image {
+    position: relative;
+
+    &--leftShift {
+      right: 100%;
+    }
+
+    &--rightShift {
+      left: 0;
+    }
   }
 }

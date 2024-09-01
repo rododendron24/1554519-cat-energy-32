@@ -8,23 +8,62 @@
 
 .social__button--vk {
   display: flex;
-  background-image: url("../../icons/stack.svg#vkontakte");
+  mask-image: url("../../icons/stack.svg#vkontakte");
   width: 28px;
   height: 22px;
+  background-color: $special-dark-grey-4;
+
+  &:hover {
+    background-color: $bg-basic-green;
+  }
+
+  &:focus {
+    background-color: $bg-basic-green;
+  }
+
+  &:active {
+    background-color: #c9e0ba;
+  }
 }
 
 .social__button--telegram {
   display: flex;
-  background-image: url("../../icons/stack.svg#telegram");
+  mask-image: url("../../icons/stack.svg#telegram");
   width: 28px;
   height: 22px;
+  background-color: $special-dark-grey-4;
+
+  &:hover {
+    background-color: $bg-basic-green;
+  }
+
+  &:focus {
+    background-color: $bg-basic-green;
+  }
+
+  &:active {
+    background-color: #c9e0ba;
+  }
 }
 
 .social__button--youtube {
   display: flex;
-  background-image: url("../../icons/stack.svg#youtube");
+  mask-image: url("../../icons/youtube.svg");
   width: 28px;
   height: 22px;
+  background-color: $special-dark-grey-4;
+
+  &:hover {
+    background-color: $bg-basic-green;
+  }
+
+  &:focus {
+    background-color: $bg-basic-green;
+  }
+
+  &:active {
+    background-color: #c9e0ba;
+  }
 }
 
 /* TABLETS */
