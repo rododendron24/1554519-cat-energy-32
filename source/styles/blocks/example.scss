@@ -312,8 +312,13 @@
   .example__button {
     position: absolute;
     top: 42%;
-    left: 49%;
+    left: 50%;
     z-index: 2;
+
+    &::after {
+      top: 50%;
+      left: 50%;
+    }
   }
 
   .example__title {
@@ -418,7 +423,7 @@
       content: "";
       position: absolute;
       top: 0;
-      left: 49%;
+      left: 50%;
       transform: translateX(-50%);
       background-color: #666666;
       border-radius: 2px;
