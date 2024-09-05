@@ -5,31 +5,134 @@
   padding-top: 27px;
   padding-bottom: 41px;
   color: $base-color-text2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 65px;
+    padding-bottom: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+    padding-bottom: 84px;
+    padding-left: 110px;
+  }
 }
 
 .cards__title-container {
   padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .cards__list {
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    margin: 0;
+    padding: 0 30px;
+    min-width: 324px;
+    min-height: 511px;
+    z-index: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 65px 80px;
+    margin: 0;
+    padding: 0;
+    min-width: 245px;
+    min-height: 511px;
+    z-index: 2;
+  }
 }
 
 .cards__item {
   padding-top: 20px 20px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+    margin-top: auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 63px;
+    position: relative;
+    z-index: 1;
+  }
 }
 
 .cards__item-add {
   @include flex-center;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 324px;
+    min-height: 430px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
+    min-height: 431px;
+  }
 }
 
+@media (min-width: $tablet-width) {
+  .cards__item-add::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 324px;
+    height: 430px;
+    border: 2px solid $basic-grey;
+    z-index: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cards__item-add::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 245px;
+    height: 431px;
+    border: 2px solid $basic-grey;
+    z-index: 0;
+  }
+}
 
 .cards__line-container {
   @include flex-center;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .cards__line {
@@ -38,4 +141,13 @@
   background-color: $special-grey-2;
   border: 0;
   margin: 0;
+}
+
+
+/* DESKTOP */
+
+@media (min-width: $desktop-width) {
+  .cards__container {
+    padding: 0 110px;
+  }
 }

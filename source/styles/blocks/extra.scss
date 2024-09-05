@@ -1,11 +1,31 @@
 .extra__container {
   margin: 0;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+    border: 1px solid $special-grey;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .extra__list {
   padding: 0;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 
@@ -15,10 +35,17 @@
   padding: 25px 0 36px 20px;
   margin: 0;
   color: $base-color-text2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+    padding: 74px 0 80px 70px;
+    position: relative;
+  }
 }
 
 .extra__item-title {
-  @include title-extra;
+  font-weight: 400;
   color: $special-dark-grey-2;
   text-decoration: none;
   display: block;
@@ -62,4 +89,155 @@
   background-color: $special-grey;
   border: 0;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .extra__line--top {
+    display: none;
+  }
+
+  .extra__item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+  }
+
+  .extra__title::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 88px;
+    left: 0;
+    background-color: $bg-basic-green;
+    position: absolute;
+  }
+
+  .extra__title::after {
+    content: "";
+    display: block;
+    width: 357px;
+    height: 2px;
+    top: 88px;
+    right: 0;
+    background-color: $bg-basic-green;
+    position: absolute;
+  }
+
+  .extra__button {
+    @include button-text;
+    text-transform: uppercase;
+    min-width: 632px;
+    min-height: 40px;
+    padding: 10px 0;
+    border: none;
+  }
+
+  .extra__button-container {
+    padding-bottom: 28px;
+  }
+
+  .extra__description--option {
+    padding-right: 55px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .extra__description--value {
+    padding-right: 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .extra__item-title {
+    color: $special-dark-grey-2;
+    text-decoration: none;
+    display: block;
+    padding: 0;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .extra__description {
+    padding-bottom: 25px;
+  }
+
+  .extra__line {
+    min-width: 708px;
+  }
+}
+
+/*  DESKTOP */
+@media (min-width: $desktop-width) {
+  .extra__container-all {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 110px;
+  }
+
+  .extra__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .extra__button {
+    min-width: 244px;
+  }
+
+  .extra__line-container {
+    display: none;
+  }
+
+  .extra__item-all {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  .extra__item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    flex-direction: row;
+  }
+
+  .extra__description {
+    display: flex;
+    align-self: center;
+    padding: 0;
+  }
+
+  .extra__promo-container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .extra__item-title {
+    padding: 0;
+  }
+
+  .extra__button-container {
+    padding: 0;
+  }
+
+  .extra__title::after {
+    content: "";
+    display: block;
+    width: 357px;
+    height: 2px;
+    top: 88px;
+    right: 0;
+    background-color: $bg-basic-green;
+    position: absolute;
+  }
 }

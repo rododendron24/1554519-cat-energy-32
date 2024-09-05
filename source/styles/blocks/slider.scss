@@ -6,3 +6,11 @@
     margin-top: 99px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .slider {
+    position: relative;
+    margin-top: -125px;
+    margin-left: 115px;
+  }
+}

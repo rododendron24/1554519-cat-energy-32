@@ -7,6 +7,23 @@
   min-height: 290px;
   margin: 0 20px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+    background-image: url("../../images/promo-background-tablet@1x.png");
+    max-width: 707px;
+    min-height: 200px;
+    max-height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    background-image: url("../../images/promo-background-desktop@1x.png");
+    max-width: 245px;
+    min-width: 245px;
+    min-height: 288px;
+    max-height: 288px;
+  }
 }
 
 .promo-banner::after {
@@ -15,10 +32,26 @@
   width: 80px;
   height: 83px;
   margin: auto;
-  margin-bottom: 48px;
-  margin-top: 59px;
+  top: 59px;
+  left: 101px;
   background-image: url("../../images/icon_gift.png");
   position: absolute;
+
+  @media (min-width: $tablet-width) {
+    top: 56px;
+    left: 77px;
+    margin: 0;
+    background-image: url("../../images/icon_gift.png");
+    background-position: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 56px;
+    left: 83px;
+    margin: 0;
+    background-image: url("../../images/icon_gift.png");
+    background-position: center;
+  }
 }
 
 .promo-banner__banner-description {
@@ -30,4 +63,19 @@
   text-align: center;
   display: block;
   padding-top: 187px;
+  padding-right: 61px;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 69px;
+    text-align: left;
+    padding-right: 125px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+    padding-top: 185px;
+    text-align: center;
+  }
 }

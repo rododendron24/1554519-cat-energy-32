@@ -124,3 +124,14 @@
     padding-right: 23px;
   }
 }
+/* DESKTOP */
+@media (min-width: $desktop-width) {
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    background-color: $basic-grey;
+    padding: 60px 110px;
+  }
+}

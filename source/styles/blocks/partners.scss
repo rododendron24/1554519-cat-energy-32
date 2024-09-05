@@ -12,6 +12,10 @@
     display: block;
     max-width: 80px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .partners__address-description {
@@ -47,6 +51,10 @@
       display: block;
       max-width: 110px;
     }
+
+    .partners__title--catalog {
+      max-width: 200px;
+    }
   }
 
   .partners__address-description {
@@ -65,5 +73,33 @@
       display: block;
       margin-top: 20px;
     }
+  }
+}
+
+/* DESKTOP */
+@media (min-width: $desktop-width) {
+  .partners {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .partners__title {
+    padding: 0;
+    padding-left: 80px;
+    min-width: 250px;
+  }
+
+  .partners__address {
+    display: block;
+    min-width: 160px;
+  }
+
+  .partners__address-description {
+    text-align: left;
+    padding-right: 78px;
+    display: block;
+    min-width: 250px;
+    padding-left: 15px;
   }
 }

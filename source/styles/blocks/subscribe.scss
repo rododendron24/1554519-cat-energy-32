@@ -1,5 +1,10 @@
 .subscribe {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 80px;
+    padding: 0;
+  }
 }
 
 .subscribe__title {
@@ -11,7 +16,41 @@
   padding: 40px 0 32px;
   margin: 0;
   color: $base-color-text2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+    padding: 0;
+    padding-bottom: 66px;
+    padding-left: 70px;
+    position: relative;
+  }
 }
+
+@media (min-width: $tablet-width) {
+  .subscribe__title::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 13px;
+    left: 0;
+    background-color: $bg-basic-green;
+    position: absolute;
+  }
+
+  .subscribe__title::after {
+    content: "";
+    display: block;
+    width: 456px;
+    height: 2px;
+    top: 13px;
+    right: 0;
+    background-color: $bg-basic-green;
+    position: absolute;
+  }
+}
+
 
 .subscribe__description {
   font-family: "Oswald", sans-serif;
@@ -21,6 +60,15 @@
   display: block;
   color: $base-color-text2;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 632px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
 }
 
 
@@ -29,6 +77,15 @@
   flex-direction: column;
   margin-top: 24px;
   gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 0;
+    margin: 0;
+    margin-top: 24px;
+    margin-bottom: 80px;
+    padding: 0;
+  }
 }
 
 .subscribe__form {
@@ -36,6 +93,12 @@
   height: auto;
   display: flex;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 632px;
+    min-height: 56px;
+    justify-content: center;
+  }
 }
 
 .subscribe__field {
@@ -50,6 +113,11 @@
   font-family: "Oswald", sans-serif;
   font-size: 20px;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: 376px;
+    margin-left: 68px;
+  }
 }
 
 .subscribe__field::placeholder {
@@ -73,4 +141,11 @@
   min-height: 56px;
   text-align: center;
   padding: 15px 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: 256px;
+    font-size: 20px;
+    line-height: 26px;
+    margin-right: 68px;
+  }
 }
