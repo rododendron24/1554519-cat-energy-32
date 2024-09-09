@@ -149,7 +149,7 @@
     font-size: 16px;
     line-height: 24px;
     margin: 0;
-    padding: 0 0 56px 30px;
+    padding: 0 0 55px 30px;
     display: block;
     max-width: 740px;
   }
@@ -176,7 +176,8 @@
     line-height: 24px;
     text-align: right;
     display: block;
-    padding-top: 10px;
+    padding-top: 7px;
+    max-width: 180px;
   }
 
   .example__statistic {
@@ -197,7 +198,7 @@
       width: 100%;
       height: 462px;
       position: absolute;
-      bottom: 0;
+      bottom: -6px;
       left: 0;
       background-color: rgba(234, 234, 234, 1);
       z-index: -1;
@@ -233,17 +234,17 @@
     position: relative;
 
     &--leftShift {
-      right: 75%;
+      right: 73%;
     }
 
     &--rightShift {
-      left: 25%;
+      left: 27%;
     }
   }
 
   .example__button {
     position: absolute;
-    top: 41%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: $bg-basic-white;
@@ -330,6 +331,7 @@
     padding: 0;
     padding-left: 110px;
     color: $base-color-text2;
+    max-width: 700px;
   }
 
   .example__description {
@@ -375,6 +377,11 @@
 
   .example__summary-text {
     margin-right: 62px;
+    max-width: 190px;
+  }
+
+  .example__summary-number {
+    max-width: 145px;
   }
 
   .example__wrapper {

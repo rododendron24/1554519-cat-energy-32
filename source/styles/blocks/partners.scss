@@ -46,6 +46,7 @@
     max-width: 200px;
     padding: 0;
     margin: 0;
+    padding-top: 10px;
 
     span {
       display: block;
@@ -68,6 +69,7 @@
     margin: 0;
     padding: 0;
     text-align: right;
+    padding-top: 10px;
 
     span {
       display: block;
@@ -86,6 +88,7 @@
 
   .partners__title {
     padding: 0;
+    padding-top: 3px;
     padding-left: 80px;
     min-width: 250px;
   }
@@ -101,5 +104,6 @@
     display: block;
     min-width: 250px;
     padding-left: 15px;
+    padding-top: 3px;
   }
 }

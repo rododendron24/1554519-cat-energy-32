@@ -23,6 +23,7 @@
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 3;
 }
 
 .hero__title {
@@ -88,8 +89,9 @@
   .hero__title {
     color: $base-color-text2;
     margin: 0;
+    margin-top: -5px;
     padding: 0;
-    padding-bottom: 37px;
+    padding-bottom: 40px;
     text-align: left;
   }
 
@@ -124,7 +126,7 @@
     min-height: 54px;
     font-size: 20px;
     line-height: 26px;
-    z-index: 1;
+    z-index: 10;
   }
 
   .hero__banner {

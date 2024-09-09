@@ -11,6 +11,7 @@
     flex-direction: row;
     padding: 25px 34px 0 30px;
     align-items: center;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -108,7 +109,7 @@
   background-image: url("../../icons/toggle-button-close.svg");
 }
 
-.main-header__toggle--close {
+.main-header__toggle--closed {
   display: block;
   width: 24px;
   height: 24px;
@@ -187,6 +188,20 @@
 @media (min-width: $desktop-width) {
   .main-header__container::before {
     content: "";
+    width: 50%;
+    height: 694px;
+    top: 0;
+    right: 0;
+    left: auto;
+    position: absolute;
+    background-color: #64a73c;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+  }
+
+  .main-header__container::after {
+    content: "";
     width: 720px;
     height: 694px;
     top: 0;
@@ -196,10 +211,11 @@
     background-image: url("../../images/hero-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: contain;
-    z-index: 0;
+    z-index: 1;
   }
 
-  .main-header__container--catalog::before {
+  .main-header__container--catalog::before,
+  .main-header__container--catalog::after {
     display: none;
   }
 
