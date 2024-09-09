@@ -4,7 +4,6 @@
   margin: 0;
   padding-top: 27px;
   padding-bottom: 41px;
-  color: $base-color-text2;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -15,7 +14,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 74px;
-    padding-bottom: 84px;
+    padding-bottom: 71px;
     padding-left: 110px;
   }
 }
@@ -26,10 +25,12 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     padding-left: 30px;
+    margin-bottom: 81px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    margin-bottom: 81px;
   }
 }
 
@@ -53,7 +54,7 @@
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(4, 1fr);
-    gap: 65px 80px;
+    gap: 53px 80px;
     margin: 0;
     padding: 0;
     min-width: 245px;
@@ -85,43 +86,25 @@
 .cards__item-add {
   @include flex-center;
   flex-direction: column;
+  margin-top: 10px;
 
   @media (min-width: $tablet-width) {
     align-items: center;
     justify-content: flex-start;
     min-width: 324px;
     min-height: 430px;
+    /* margin-bottom: 81px;
+    border: 2px solid $basic-grey; */
   }
 
   @media (min-width: $desktop-width) {
     min-width: 245px;
     min-height: 431px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .cards__item-add::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 324px;
-    height: 430px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
     border: 2px solid $basic-grey;
-    z-index: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .cards__item-add::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 245px;
-    height: 431px;
-    border: 2px solid $basic-grey;
-    z-index: 0;
+    margin-bottom: 81px;
   }
 }
 
@@ -149,5 +132,106 @@
 @media (min-width: $desktop-width) {
   .cards__container {
     padding: 0 110px;
+  }
+}
+
+.cards__button-show-all {
+  @include button-text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+  padding: 10px 0;
+  min-width: 280px;
+  min-height: 40px;
+  margin: 0;
+  margin-bottom: 25px;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    min-width: 250px;
+    min-height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 1;
+    min-width: 169px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.cards__button-add {
+  @include flex-center;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin: 40px auto 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: center;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+}
+
+.cards__title-add {
+  @include title-card;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 8px;
+  text-decoration: none;
+  color: $special-dark-grey-3;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 140px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 26px;
+    display: block;
+    text-align: center;
+  }
+}
+
+.cards__description-add {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    max-width: 170px;
+    text-align: center;
+    padding-bottom: 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-bottom: 89px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
   }
 }

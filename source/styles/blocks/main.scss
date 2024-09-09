@@ -1,0 +1,10 @@
+@media (min-width: $desktop-width) {
+  .main__products,
+  .main__steps,
+  .main__example {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

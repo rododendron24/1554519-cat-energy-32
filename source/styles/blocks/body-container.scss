@@ -8,13 +8,17 @@
 /* TABLET */
 @media (min-width: $tablet-width) {
   .body-container {
-    max-width: 1439px;
+    width: 1439px;
   }
 }
 
 /* DESKTOP */
 @media (min-width: $desktop-width) {
   .body-container {
-    min-width: 1440px;
+    min-width: 100%;
+  }
+
+  .body-container__header {
+    width: 100%;
   }
 }

@@ -10,4 +10,9 @@
     width: 60px;
     height: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 60px;
+    height: 60px;
+  }
 }

@@ -15,6 +15,11 @@
 
 .footer__social {
   padding: 20px 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 150px;
 }
 
 .footer__dev-logo {
@@ -95,7 +100,7 @@
     align-items: center;
     margin-top: auto;
     background-color: $basic-grey;
-    padding: 50px 30px;
+    padding: 58px 30px;
   }
 
   .footer__dev-logo {
@@ -113,6 +118,7 @@
 
   .footer__social {
     padding: 0;
+    max-width: 250px;
   }
 
   .footer__logo {
@@ -132,6 +138,11 @@
     align-items: center;
     margin-top: auto;
     background-color: $basic-grey;
-    padding: 60px 110px;
+    padding: 67px 110px;
+  }
+
+  .footer__social {
+    padding: 0;
+    max-width: 250px;
   }
 }
