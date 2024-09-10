@@ -39,10 +39,10 @@
         </div>
       </div>
 
-      <nav class="main-header__nav main-nav">
+      <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__container">
           <ul class="main-nav__list nav-list">
-            <li class="main-nav__item">
+            <li class=" main-nav__item">
               <hr class="main-nav__line">
               <a class="main-nav__link main-nav__link--current" href="index.html"><span>Главная</span></a>
             </li>
@@ -286,7 +286,22 @@
       </div>
     </div>
   </section>
+  <script>
+    let navMain = document.querySelector('.main-nav');
+    let navToggle = document.querySelector('.main-header__toggle');
 
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 </body>
 
 </html>
