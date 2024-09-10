@@ -39,9 +39,9 @@
         </div>
       </div>
 
-      <nav class="main-header__nav main-nav">
+      <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__container">
-          <ul class="main-nav__list nav-list main-nav__list--closed">
+          <ul class="main-nav__list nav-list">
             <li class="main-nav__item">
               <hr class="main-nav__line">
               <a class="main-nav__link main-nav__link--catalog" href="index.html">Главная</a>
@@ -112,7 +112,7 @@
                   </div>
                 </div>
                 <div class="card__button-container">
-                  <button class="card__button button button--primary" type="button">Заказать</button>
+                  <a class="card__button button button--primary" href="order.html">Заказать</a>
                 </div>
                 <div class="card__line-container">
                   <hr class="card__line">
@@ -156,7 +156,7 @@
                   </div>
                 </div>
                 <div class="card__button-container container">
-                  <button class="card__button button button--primary" type="button">Заказать</button>
+                  <a class="card__button button button--primary" href="order.html">Заказать</a>
                 </div>
                 <div class="card__line-container">
                   <hr class="card__line">
@@ -200,7 +200,7 @@
                   </div>
                 </div>
                 <div class="card__button-container container">
-                  <button class="card__button button button--primary" type="button">Заказать</button>
+                  <a class="card__button button button--primary" href="order.html">Заказать</a>
                 </div>
                 <div class="card__line-container">
                   <hr class="card__line">
@@ -244,7 +244,7 @@
                   </div>
                 </div>
                 <div class="card__button-container container">
-                  <button class="card__button button button--primary" type="button">Заказать</button>
+                  <a class="card__button button button--primary" href="order.html">Заказать</a>
                 </div>
                 <div class="card__line-container">
                   <hr class="card__line">
@@ -288,7 +288,7 @@
                   </div>
                 </div>
                 <div class="card__button-container container">
-                  <button class="card__button button button--primary" type="button">Заказать</button>
+                  <a class="card__button button button--primary" href="order.html">Заказать</a>
                 </div>
                 <div class="card__line-container">
                   <hr class="card__line">
@@ -332,7 +332,7 @@
                   </div>
                 </div>
                 <div class="card__button-container container">
-                  <button class="card__button button button--primary" type="button">Заказать</button>
+                  <a class="card__button button button--primary" href="order.html">Заказать</a>
                 </div>
                 <div class="card__line-container">
                   <hr class="card__line">
@@ -376,7 +376,7 @@
                   </div>
                 </div>
                 <div class="card__button-container container">
-                  <button class="card__button button button--primary" type="button">Заказать</button>
+                  <a class="card__button button button--primary" href="order.html">Заказать</a>
                 </div>
                 <div class="card__line-container">
                   <hr class="card__line">
@@ -591,7 +591,22 @@
       </div>
     </div>
   </section>
+  <script>
+    let navMain = document.querySelector('.main-nav');
+    let navToggle = document.querySelector('.main-header__toggle');
 
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 </body>
 
 </html>

@@ -2,9 +2,9 @@
 .main-nav__list {
   padding: 0;
   margin: 0;
-  display: none;
   flex-direction: column;
   align-items: center;
+  display: flex;
 }
 
 .main-nav__toggle--closed {
@@ -167,5 +167,19 @@
 
   .main-nav__link--catalog:active {
     color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed {
+    display: none;
+  }
+
+  .main-nav--opened {
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
   }
 }
