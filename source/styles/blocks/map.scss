@@ -65,8 +65,8 @@
   @media (min-width: $tablet-width) {
     width: 113px;
     height: 106px;
-    top: 351px;
-    left: 332px;
+    top: 346px;
+    left: 333px;
   }
 
   @media (min-width: $desktop-width) {
@@ -91,6 +91,7 @@
   .map__container {
     min-width: 768px;
     min-height: 400px;
+    margin-top: -6px;
   }
 }
 
