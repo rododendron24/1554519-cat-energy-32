@@ -132,6 +132,10 @@
 }
 /* DESKTOP */
 @media (min-width: $desktop-width) {
+  .footer {
+    background-color: $basic-grey;
+  }
+
   .footer__container {
     display: flex;
     justify-content: space-between;
