@@ -8,6 +8,10 @@
   }
 }
 
+.map__iframe--nojs {
+  display: none;
+}
+
 .map__partners {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
