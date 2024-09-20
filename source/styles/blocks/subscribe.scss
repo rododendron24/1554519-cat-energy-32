@@ -48,7 +48,7 @@
   border: 1px solid $special-grey;
   border-radius: 0;
   padding: 0;
-  //  padding-left: 13px;
+  padding-left: 13px;
   background: $bg-basic-white;
   display: flex;
   justify-content: center;
@@ -290,7 +290,7 @@
   color: $base-color-text;
   text-transform: uppercase;
   display: block;
-  padding: 13px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     padding: 0;
