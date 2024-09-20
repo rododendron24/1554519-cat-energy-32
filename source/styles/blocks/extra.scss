@@ -1,11 +1,96 @@
+
+.extra {
+  position: relative;
+}
+
+.extra__item {
+  border: 1px solid $special-grey;
+  border-width: 1px 0 0;
+
+  &:last-child {
+    border-bottom-width: 1px;
+  }
+
+  @media (min-width: $tablet-width) {
+    border-width: 1px 1px 0;
+    padding: 26px 38px 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    align-items: center;
+  }
+}
+
+.extra::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: $bg-basic-green;
+  position: absolute;
+  top: 34px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    top: 16px;
+  }
+}
+
+.extra__title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  top: 15px;
+  right: -40px;
+  background-color: $bg-basic-white;
+  position: absolute;
+}
+
+.extra__title::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: 28px;
+  left: -20px;
+  background-color: $bg-basic-white;
+  position: absolute;
+}
+
+@media (min-width: $tablet-width) {
+  .extra__title::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: -40px;
+    background-color: $bg-basic-white;
+    position: absolute;
+  }
+
+  .extra__title::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: -40px;
+    background-color: $bg-basic-white;
+    position: absolute;
+  }
+}
+
 .extra__container {
   margin: 0;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 30px;
-    border: 1px solid $special-grey;
-    margin-bottom: 70px;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,45 +113,60 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 163px 139px;
+    grid-template-columns: 70% 70%;
     column-gap: 4px;
-    padding-top: 10px;
   }
 }
 
 .extra__list {
-  padding: 0;
   margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 0;
   }
 }
-
 
 .extra__title {
   @include title-section-catalog;
   display: block;
-  padding: 25px 0 32px 20px;
+  padding: 24px 0 36px;
   margin: 0;
+  margin-left: 20px;
   color: $base-color-text2;
+  z-index: 2;
+  position: relative;
+  background-color: $bg-basic-white;
+  max-width: 226px;
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
-    padding: 0 0 83px 70px;
+    padding: 0;
+    padding-bottom: 83px;
     position: relative;
     margin-top: -9px;
+    margin-left: 70px;
+    max-width: 301px;
+    z-index: 2;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    padding-bottom: 68px;
-    padding-left: 110px;
+    padding-bottom: 77px;
     font-size: 40px;
     line-height: 40px;
+    max-width: 376px;
+    z-index: 2;
+    position: relative;
+    margin-left: 110px;
   }
 }
 
@@ -92,17 +192,22 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    padding: 0;
   }
 }
 
 .extra__button-container {
   @include flex-center;
-  padding-bottom: 18px;
+  padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 0;
     margin: 0;
-    margin-top: 25px;
   }
 }
 
@@ -113,6 +218,9 @@
   min-height: 40px;
   padding: 10px 0;
   border: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 
 .extra__line-container {
@@ -138,29 +246,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 25px;
-  }
-
-  .extra__title::before {
-    content: "";
-    display: block;
-    width: 30px;
-    height: 2px;
-    top: 17px;
-    left: 0;
-    background-color: $bg-basic-green;
-    position: absolute;
-  }
-
-  .extra__title::after {
-    content: "";
-    display: block;
-    width: 357px;
-    height: 2px;
-    top: 17px;
-    right: 0;
-    background-color: $bg-basic-green;
-    position: absolute;
   }
 
   .extra__button {
@@ -173,23 +258,20 @@
   }
 
   .extra__button-container {
-    padding-bottom: 28px;
+    padding-top: 25px;
   }
 
   .extra__description-text--option {
     font-size: 16px;
     line-height: 20px;
-    margin-top: -10px;
-    padding-right: 30px;
+    padding-right: 10px;
     display: flex;
     justify-content: flex-start;
   }
 
   .extra__description-text--value {
-    padding-right: 20px;
     font-size: 16px;
     line-height: 20px;
-    margin-top: -10px;
   }
 
   .extra__item-title {
@@ -197,14 +279,8 @@
     text-decoration: none;
     display: block;
     padding: 0;
-    padding-left: 20px;
-    padding-bottom: 25px;
     font-size: 20px;
     line-height: 20px;
-  }
-
-  .extra__description {
-    padding-bottom: 10px;
   }
 
   .extra__line {
@@ -227,18 +303,16 @@
     text-align: left;
   }
 
-  .extra__list {
-    position: relative;
+  .extra__description-text--option {
+    padding-right: 10px;
   }
 
-  .extra__list::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 895px;
-    height: 1px;
-    background-color: $special-grey;
-    bottom: -12px;
+  .extra__description-text--value {
+    margin-left: 71px;
+  }
+
+  .extra__list {
+    position: relative;
   }
 
   .extra__item {
@@ -269,6 +343,7 @@
     display: grid;
     grid-template-columns: 324px 244px 82px;
     min-height: 72px;
+    margin-bottom: -1px;
   }
 
   .extra__description {
@@ -279,7 +354,6 @@
 
   .extra__description-value {
     display: flex;
-    justify-content: flex-end;
     text-align: left;
   }
 
@@ -293,35 +367,14 @@
     position: relative;
   }
 
-  .extra__item-title::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 895px;
-    height: 1px;
-    background-color: $special-grey;
-    top: -28px;
-  }
-
   .extra__button-container {
     padding: 0;
   }
 
-  .extra__title::after {
+  .extra::before {
     content: "";
     display: block;
-    width: 915px;
-    height: 2px;
-    top: 18px;
-    right: 0;
-    background-color: $bg-basic-green;
-    position: absolute;
-  }
-
-  .extra__title::before {
-    content: "";
-    display: block;
-    width: 70px;
+    width: 100%;
     height: 2px;
     top: 18px;
     left: 0;

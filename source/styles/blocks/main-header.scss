@@ -1,3 +1,9 @@
+@media (min-width: $desktop-width) {
+  .main-header__wrapper-center {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
 
 .main-header__container {
   padding: 0;
@@ -42,6 +48,7 @@
   width: 101px;
   height: 18px;
   margin-right: 65px;
+  margin-top: 5px;
 }
 
 .main-header__logo-image {
@@ -103,7 +110,7 @@
 }
 
 .main-header__toggle--opened {
-  display: none;
+  display: block;
   width: 18px;
   height: 18px;
   background-image: url("../../icons/toggle-button-close.svg");

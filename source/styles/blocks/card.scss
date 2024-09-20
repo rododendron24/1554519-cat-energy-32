@@ -1,6 +1,8 @@
 .card {
   padding: 0;
   margin: 0;
+  min-width: 320px;
+  min-height: 209px;
 
   @media (min-width: $tablet-width) {
     min-width: 245px;
@@ -27,6 +29,8 @@
   grid-column-start: 1;
   grid-row-start: 1;
   align-self: center;
+  min-width: 140px;
+  min-height: 107px;
 
   @media (min-width: $tablet-width) {
     z-index: 1;
@@ -40,12 +44,19 @@
 }
 
 .card__image {
-  margin-top: 9px;
   z-index: 1;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 0;
+  }
+}
+
+.card__images-link--small {
+  margin-top: 9px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
   }
 }
 
@@ -60,6 +71,7 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
+    margin-top: 161px;
   }
 }
 
@@ -67,6 +79,8 @@
 .card__text-container {
   grid-column-start: 2;
   grid-row-start: 2;
+  min-width: 140px;
+  height: 48px;
 
   @media (min-width: $tablet-width) {
     padding: 20px 37px 0;
@@ -85,7 +99,7 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid #cdcdcd;
-    padding-bottom: 4px;
+    padding-bottom: 3px;
   }
 }
 
@@ -98,6 +112,11 @@
     border-bottom: 1px solid #cdcdcd;
     padding: 6px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 1px solid #cdcdcd;
+    padding: 7px 0;
+  }
 }
 
 .card-text__third-container {
@@ -108,6 +127,11 @@
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid #cdcdcd;
     padding: 6px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 1px solid #cdcdcd;
+    padding: 7px 0;
   }
 }
 
@@ -125,6 +149,10 @@
     line-height: 24px;
     max-width: 140px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -9px;
+  }
 }
 
 .cards__item-add-container {
@@ -135,7 +163,8 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  padding: 20px 20px 0;
+  padding: 19px 20px 0;
+  min-height: 107px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -143,6 +172,7 @@
     justify-content: center;
     padding: 0;
     margin: 0;
+    min-height: 157px;
   }
 }
 
@@ -198,7 +228,7 @@
 
   @media (min-width: $tablet-width) {
     z-index: 1;
-    margin-top: 32px;
+    margin-top: 93px;
     margin-bottom: 40px;
   }
 }
@@ -210,6 +240,7 @@
   padding: 10px 0;
   min-width: 280px;
   min-height: 40px;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
     z-index: 1;
@@ -220,5 +251,6 @@
   @media (min-width: $desktop-width) {
     z-index: 1;
     min-width: 169px;
+    margin-top: 11px;
   }
 }

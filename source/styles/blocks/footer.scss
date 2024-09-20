@@ -1,4 +1,5 @@
 
+
 .footer__container {
   margin-top: auto;
   background-color: $basic-grey;
@@ -8,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 35px 0 20px;
+  padding: 41px 0 20px;
   margin: 0;
 }
 
@@ -132,6 +133,10 @@
 }
 /* DESKTOP */
 @media (min-width: $desktop-width) {
+  .footer {
+    background-color: $basic-grey;
+  }
+
   .footer__container {
     display: flex;
     justify-content: space-between;
