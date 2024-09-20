@@ -18,12 +18,13 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    margin-bottom: -25px;
+    margin-top: -26px;
     background-image: url("../../images/promo-background-desktop@1x.png");
     max-width: 245px;
     min-width: 245px;
     min-height: 288px;
     max-height: 288px;
-    margin-bottom: -25px;
   }
 }
 
