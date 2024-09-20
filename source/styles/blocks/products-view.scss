@@ -113,6 +113,7 @@
 .products-view__list {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .products-view__list-container {
@@ -313,6 +314,7 @@
 
   .products-view__title--slim {
     padding: 77px 192px 65px 214px;
+    max-width: 200px;
   }
 
 
