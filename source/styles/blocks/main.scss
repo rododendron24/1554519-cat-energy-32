@@ -1,8 +1,6 @@
 @media (min-width: $desktop-width) {
   .main__products,
-  .main__steps,
-  .example__container,
-  .footer__container {
+  .main__steps {
     max-width: 1440px;
     margin: 0 auto;
   }
