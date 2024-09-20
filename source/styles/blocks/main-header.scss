@@ -110,14 +110,14 @@
   margin: 0;
 }
 
-.main-header__toggle--opened {
+.main-header__toggle--closed {
   display: block;
   width: 18px;
   height: 18px;
   background-image: url("../../icons/toggle-button-close.svg");
 }
 
-.main-header__toggle--closed {
+.main-header__toggle--opened {
   display: block;
   width: 24px;
   height: 24px;
