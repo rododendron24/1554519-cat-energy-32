@@ -1,4 +1,12 @@
 
+
+.main-nav__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
 .main-nav__list {
   padding: 0;
   margin: 0;
@@ -9,12 +17,6 @@
 
 .main-nav__toggle--closed {
   cursor: pointer;
-}
-
-.main-nav__item {
-  @include flex-center;
-  flex-direction: column;
-  padding: 0;
 }
 
 .main-nav__link {
@@ -33,7 +35,7 @@
 .main-nav__link--current {
   span {
     border-bottom: 2px solid $basic-green;
-    padding-bottom: 6px;
+    padding-bottom: 8px;
     z-index: 1;
   }
 }
@@ -91,6 +93,18 @@
     text-decoration: none;
     color: $base-color-text2;
     padding: 0;
+  }
+
+  .main-nav__link--current {
+    span {
+      border-bottom: 2px solid $basic-green;
+      padding-bottom: 6px;
+      z-index: 1;
+    }
+  }
+
+  .main-nav__line {
+    display: none;
   }
 }
 

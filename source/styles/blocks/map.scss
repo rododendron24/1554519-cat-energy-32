@@ -12,6 +12,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 25px 20px;
+  margin: 0;
 
   @media (min-width: $desktop-width) {
     background-color: $bg-basic-white;
@@ -86,6 +87,7 @@
     padding: 0 70px;
     justify-content: space-between;
     min-height: 200px;
+    margin-bottom: 10px;
   }
 
   .map__container {

@@ -110,7 +110,7 @@
 }
 
 .main-header__toggle--opened {
-  display: none;
+  display: block;
   width: 18px;
   height: 18px;
   background-image: url("../../icons/toggle-button-close.svg");
@@ -133,13 +133,6 @@
     display: flex;
     flex-direction: row;
     min-width: 436px;
-  }
-
-  .main-nav__item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
   }
 
   .main-header__logo {
@@ -182,10 +175,6 @@
   }
 
   .main-header__toggle-container {
-    display: none;
-  }
-
-  .main-nav__line {
     display: none;
   }
 }

@@ -7,10 +7,9 @@
   <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="scripts/index.js" as="script">
-  <link rel="preload" href="images/index-can-desktop@2x.png" as="image">
-  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicon.ico"><!-- 32x32 -->
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180×180 -->
+  <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180x180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -105,7 +104,7 @@
 
             <li class="products-view__item products-view-item">
 
-              <div class="products-view__list-container">
+              <div class="products-view__list-container products-view__list-container--slim">
 
                 <h3 class="products-view__title products-view__title--slim title-special">Похудение</h3>
                 <p class="products-view__description base-text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -124,7 +123,7 @@
             </li>
 
             <li class="products-view__item products-view-item pro">
-              <div class="products-view__list-container">
+              <div class="products-view__list-container products-view__list-container--pro">
 
                 <h3 class="products-view__title products-view__title--pro title-special">Набор массы</h3>
                 <p class="products-view__description base-text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
@@ -176,6 +175,7 @@
         <div class="example__container container">
           <h2 class="example__title title-section">Живой пример</h2>
           <div class="example__wrapper">
+
             <div class="example__container-top">
               <div class="example__before-slider-container"></div>
               <p class="example__description base-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
@@ -214,11 +214,11 @@
             <div class="example__slider slider">
               <picture class="example__image-wrapper">
                 <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-before-slider-tablet@1x.png 1x, images/cat-before-slider-tablet@2x.png 2x">
-                <img class="example__image example__image--rightShift" src="images/cat-before-slider-mobile@1x.png" srcset="images/cat-before-slider-mobile@2x.png 2x" loading="lazy" width="280" height="256" alt="Кот до похудения">
+                <img class="example__image example__image--rightshift" src="images/cat-before-slider-mobile@1x.png" srcset="images/cat-before-slider-mobile@2x.png 2x" loading="lazy" width="280" height="256" alt="Кот до похудения">
               </picture>
               <picture class="example__image-wrapper">
                 <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-after-slider-tablet@1x.png 1x, images/cat-after-slider-tablet@2x.png 2x">
-                <img class="example__image example__image--leftShift" src="images/cat-after-slider-mobile@1x.png" srcset="images/cat-after-slider-mobile@2x.png 2x" loading="lazy" width="280" height="256" alt="Кот после похудения">
+                <img class="example__image example__image--leftshift" src="images/cat-after-slider-mobile@1x.png" srcset="images/cat-after-slider-mobile@2x.png 2x" loading="lazy" width="280" height="256" alt="Кот после похудения">
               </picture>
               <button class="example__button" type="button">
                 <span class="visually-hidden">Переключатель слайдов</span>
@@ -296,13 +296,10 @@
     navMain.classList.remove('main-nav--nojs');
 
     navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
+      navMain.classList.toggle('main-nav--closed');
+      navMain.classList.toggle('main-nav--opened');
+      navToggle.classList.toggle('main-header__toggle--closed')
+      navToggle.classList.toggle('main-header__toggle--opened')
     });
   </script>
 </body>
