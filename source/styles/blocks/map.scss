@@ -59,34 +59,6 @@
 }
 
 
-.map::after {
-  content: "";
-  width: 57px;
-  height: 53px;
-  top: 251px;
-  left: 134px;
-  position: absolute;
-  background-image: url("../../icons/stack.svg#map-pin");
-  background-repeat: no-repeat;
-  background-size: contain;
-  z-index: 1;
-
-  @media (min-width: $tablet-width) {
-    width: 113px;
-    height: 106px;
-    top: 346px;
-    left: 333px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 113px;
-    height: 106px;
-    top: 131px;
-    left: 908px;
-  }
-}
-
-
 /* TABLETS */
 @media (min-width: $tablet-width) {
   .map__partners {
