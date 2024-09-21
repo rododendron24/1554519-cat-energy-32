@@ -92,7 +92,7 @@
   }
 }
 
-.card-text__first-container {
+.card__text-wrapper--first-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -103,7 +103,7 @@
   }
 }
 
-.card-text__second-container {
+.card__text-wrapper--second-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -119,7 +119,7 @@
   }
 }
 
-.card-text__third-container {
+.card__text-wrapper--third-container {
   display: flex;
   justify-content: space-between;
   align-items: center;

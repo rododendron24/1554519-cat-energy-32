@@ -126,6 +126,11 @@
     position: absolute;
   }
 
+  .subscribe__title-wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+
   .subscribe__title::after {
     content: "";
     display: block;
