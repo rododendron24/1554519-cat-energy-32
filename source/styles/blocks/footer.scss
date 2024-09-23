@@ -1,0 +1,153 @@
+.footer__container {
+  margin-top: auto;
+  background-color: $basic-grey;
+}
+
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 41px 0 20px;
+  margin: 0;
+}
+
+
+.footer__social {
+  padding: 20px 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 150px;
+}
+
+.footer__dev-logo {
+  padding: 20px 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__dev-logo-text {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  display: block;
+}
+
+.footer__text-link {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  display: block;
+  text-decoration: none;
+  color: $base-color-text;
+}
+
+.footer__text-link:active {
+  color: $base-color-text;
+  opacity: 0.3;
+}
+
+.footer__dev-logo-icon {
+  mask-image: url("../../icons/stack.svg#logo-academy");
+  display: block;
+  width: 27px;
+  height: 34px;
+  background-color: $special-dark-grey-4;
+}
+
+.footer__dev-logo-icon:hover {
+  background-color: $basic-green;
+}
+
+.footer__dev-logo-icon:active {
+  background-color: $basic-green;
+  opacity: 0.3;
+}
+
+.footer__logo-text:hover {
+  opacity: 0.8;
+}
+
+.footer__logo-text:active {
+  opacity: 0.6;
+}
+
+.footer__line-container {
+  @include flex-center;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.footer__line {
+  width: 280px;
+  height: 1px;
+  background-color: $special-grey-3;
+  border: 0;
+  margin: 0;
+}
+
+
+/* TABLETS */
+@media (min-width: $tablet-width) {
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    background-color: $basic-grey;
+    padding: 58px 30px;
+  }
+
+  .footer__dev-logo {
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer__line-container {
+    display: none;
+  }
+
+  .footer__line {
+    display: none;
+  }
+
+  .footer__social {
+    padding: 0;
+    max-width: 250px;
+  }
+
+  .footer__logo {
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer__text-link {
+    padding-right: 23px;
+  }
+}
+/* DESKTOP */
+@media (min-width: $desktop-width) {
+  .footer {
+    background-color: $basic-grey;
+  }
+
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: auto;
+    background-color: $basic-grey;
+    padding: 67px 110px;
+    max-width: 1440px;
+  }
+
+  .footer__social {
+    padding: 0;
+    max-width: 250px;
+  }
+}

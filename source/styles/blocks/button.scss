@@ -1,0 +1,36 @@
+
+
+.button {
+  @include button-text;
+  background-color: $bg-basic-green;
+  color: #ffffff;
+}
+
+.button--primary {
+  background-color: $bg-basic-green;
+  color: $bg-basic-white;
+  cursor: pointer;
+}
+
+.button--secondary {
+  background-color: $basic-grey;
+  color: $base-color-text;
+  cursor: pointer;
+}
+
+.button--primary:hover {
+  background-color: $basic-green-2;
+}
+
+.button--primary:active {
+  background-color: $basic-green-2;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button--secondary:hover {
+  background-color: $special-grey-2;
+}
+
+.button--secondary:active {
+  background-color: $special-grey-2;
+}

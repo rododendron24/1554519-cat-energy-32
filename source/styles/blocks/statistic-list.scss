@@ -1,0 +1,17 @@
+.statistic-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+
+/* TABLETS */
+@media (min-width: $tablet-width) {
+  .statistic-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin: 0;
+  }
+}

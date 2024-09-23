@@ -1,0 +1,217 @@
+.hero__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../../images/hero-background-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  margin-bottom: 138px;
+  padding: 0;
+  min-width: 320px;
+  min-height: 302px;
+  position: relative;
+}
+
+.hero__banner {
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+  min-height: 270px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.hero__title {
+  @include title;
+  color: $bg-basic-white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 450px;
+  }
+}
+
+.hero__description {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: $bg-basic-white;
+  text-align: center;
+  display: block;
+  margin: 0;
+  margin-bottom: 29px;
+  text-transform: uppercase;
+}
+
+.hero__button {
+  @include flex-center;
+  @include button-text;
+  text-align: center;
+  padding: 10px 64px;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+.hero__button--desktop {
+  display: none;
+}
+
+/* TABLET */
+@media (min-width: $tablet-width) {
+  .hero__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: none;
+    justify-content: flex-start;
+    margin: 0;
+    margin-top: 65px;
+    margin-bottom: 290px;
+    padding: 0;
+    position: relative;
+  }
+
+  .hero__heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 5px;
+    margin-left: -112px;
+  }
+
+  .hero__title {
+    color: $base-color-text2;
+    margin: 0;
+    margin-top: -5px;
+    padding: 0;
+    padding-bottom: 40px;
+    text-align: left;
+    word-break: break-all;
+  }
+
+  .hero__description {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $base-color-text2;
+    text-align: left;
+    display: block;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 0;
+    padding-bottom: 50px;
+  }
+
+  .hero__banner-container {
+    margin-top: 200px;
+    margin-bottom: 21px;
+  }
+
+  .hero__button--mobile {
+    display: none;
+  }
+
+  .hero__button--desktop {
+    display: block;
+    margin: 0;
+    padding: 14px 26px;
+    max-width: 244px;
+    min-height: 54px;
+    font-size: 20px;
+    line-height: 26px;
+    z-index: 10;
+  }
+
+  .hero__banner {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    min-width: 709px;
+    min-height: 609px;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: $desktop-width) {
+  .hero {
+    position: relative;
+  }
+
+  .hero__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero__heading {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 430px;
+  }
+
+  .hero__title {
+    @include title;
+    color: $base-color-text2;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  .hero__description {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    font-style: normal;
+    color: $base-color-text2;
+    text-align: left;
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 52px;
+    text-transform: uppercase;
+  }
+
+  .hero__button--mobile {
+    display: none;
+  }
+
+  .hero__button--desktop {
+    display: block;
+    margin: 0;
+    padding: 14px 26px;
+    max-width: 244px;
+    min-height: 54px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .hero__banner {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    min-width: 552px;
+    min-height: 499px;
+    position: absolute;
+    top: 170px;
+    left: 155%;
+  }
+}

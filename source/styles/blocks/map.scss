@@ -1,0 +1,85 @@
+.map {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0;
+    margin-top: 7px;
+  }
+}
+
+.map__iframe--nojs {
+  display: none;
+}
+
+.map__image {
+  display: none;
+}
+
+.map__partners {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 25px 20px;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    background-color: $bg-basic-white;
+    position: absolute;
+    z-index: 2;
+    top: 95px;
+    left: 110px;
+    padding: 0;
+    min-width: 565px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.map__partners--catalog {
+  background-color: $basic-grey;
+}
+
+.map__container iframe {
+  background-color: $basic-grey;
+  border: none;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+    margin-top: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    min-height: 400px;
+    margin-top: -7px;
+  }
+}
+
+/* TABLETS */
+@media (min-width: $tablet-width) {
+  .map__partners {
+    display: flex;
+    align-items: center;
+    padding: 0 70px;
+    justify-content: space-between;
+    min-height: 200px;
+    margin-bottom: 10px;
+  }
+
+  .map__container {
+    min-width: 768px;
+    min-height: 400px;
+    margin-top: -6px;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: $desktop-width) {
+  .map__container {
+    width: 100%;
+    min-height: 400px;
+  }
+}
