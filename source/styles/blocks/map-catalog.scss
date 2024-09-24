@@ -2,3 +2,12 @@
   background-color: $basic-grey;
   margin-top: 40px;
 }
+
+
+@media (min-width: $tablet-width) {
+  .map-catalog__partners--catalog {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
