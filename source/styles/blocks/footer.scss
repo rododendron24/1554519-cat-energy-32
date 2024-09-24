@@ -1,7 +1,3 @@
-.footer {
-  background-color: $basic-grey;
-}
-
 .footer__container {
   margin-top: auto;
   background-color: $basic-grey;
@@ -101,11 +97,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
     margin-top: auto;
     background-color: $basic-grey;
     padding: 58px 30px;
-    max-width: 768px;
   }
 
   .footer__dev-logo {
