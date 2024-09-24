@@ -35,13 +35,13 @@
           </a>
         </div>
         <div class="main-header__toggle-container">
-          <button class="main-header__toggle burger main-header__toggle--closed main-header__toggle--opened" type="button">
+          <button class="main-header__toggle burger main-header__toggle--closed" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
       </div>
 
-      <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-header__nav main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__container">
           <ul class="main-nav__list nav-list">
             <li class="main-nav__item">
@@ -526,9 +526,11 @@
 
             </ul>
           </div>
-          <div class="extra__promo-container promo-banner">
-            <h2 class="visually-hidden">Специальное предложение</h2>
-            <span class="promo-banner__banner-description">Закажите все<br>и получите чехол для<br>кота в подарок!</span>
+          <div class="extra__promo-wrapper">
+            <div class="extra__promo-container promo-banner">
+              <h2 class="visually-hidden">Специальное предложение</h2>
+              <span class="promo-banner__banner-description">Закажите все<br>и получите чехол для<br>кота в подарок!</span>
+            </div>
           </div>
         </div>
       </section>
@@ -563,11 +565,6 @@
         </div>
         <div class="map__container-catalog map__container">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625719791!2d30.320472476916382!3d59.93871916209402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1725809662232!5m2!1sru!2sru" width="320" height="362" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></iframe>
-          <picture>
-            <source media="(min-width: 1200px)" width="1440" height="400" type="image/jpg" srcset="images/map-background-desktop@1x.jpg 1x, images/map-background-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" width="768" height="400" type="image/jpg" srcset="images/map-background-tablet@1x.jpg 1x, images/map-background-tablet@2x.jpg 2x">
-            <img class="map__image map-background" src="images/map-background-mobile@1x.jpg" srcset="images/map-background-mobile@2x.jpg 2x" width="320" height="362" alt="Карта проезда">
-          </picture>
         </div>
       </section>
     </div>
@@ -625,13 +622,10 @@
     navMain.classList.remove('main-nav--nojs');
 
     navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
+      navMain.classList.toggle('main-nav--closed');
+      navMain.classList.toggle('main-nav--opened');
+      navToggle.classList.toggle('main-header__toggle--closed')
+      navToggle.classList.toggle('main-header__toggle--opened')
     });
   </script>
 </body>

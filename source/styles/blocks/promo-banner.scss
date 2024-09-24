@@ -1,5 +1,6 @@
 .promo-banner {
   display: flex;
+  background-color: $basic-green-2;
   background-image:
     image-set(
       url("../../images/promo-background-mobile@1x.webp") type("image/webp") 1x,
@@ -11,8 +12,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 290px;
-  margin: 37px 20px 0;
+  margin: 37px auto;
   position: relative;
+  max-width: 280px;
 
   @media (min-width: $tablet-width) {
     margin: 70px 30px 0;
