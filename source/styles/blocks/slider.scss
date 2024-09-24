@@ -1,9 +1,15 @@
+.slider {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 94px;
+  width: 280px;
+}
 
-/* TABLETS */
 @media (min-width: $tablet-width) {
   .slider {
     position: relative;
     margin-top: 94px;
+    width: auto;
   }
 }
 
