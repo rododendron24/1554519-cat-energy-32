@@ -17,7 +17,7 @@
   max-width: 280px;
 
   @media (min-width: $tablet-width) {
-    margin: 70px 30px 0;
+    margin: 70px auto;
     background-image:
       image-set(
         url("../../images/promo-background-tablet@1x.webp") type("image/webp") 1x,
