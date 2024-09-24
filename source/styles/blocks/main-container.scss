@@ -1,3 +1,15 @@
+.main-container__cards {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .main-container__cards {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .main-container__cards {
     max-width: 1440px;
