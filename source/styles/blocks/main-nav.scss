@@ -1,3 +1,24 @@
+.main-nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  background-color: $bg-basic-white;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
+}
+
+.main-nav--nojs {
+  position: relative;
+  display: block;
+}
+
 .main-nav__item {
   display: flex;
   flex-direction: column;
@@ -32,9 +53,11 @@
 
 .main-nav__link--current {
   span {
-    border-bottom: 2px solid $basic-green;
-    padding-bottom: 8px;
-    z-index: 1;
+    @media (min-width: 768px) {
+      border-bottom: 2px solid $basic-green;
+      padding-bottom: 8px;
+      z-index: 1;
+    }
   }
 }
 
