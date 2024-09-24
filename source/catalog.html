@@ -35,13 +35,13 @@
           </a>
         </div>
         <div class="main-header__toggle-container">
-          <button class="main-header__toggle burger main-header__toggle--closed main-header__toggle--opened" type="button">
+          <button class="main-header__toggle burger main-header__toggle--closed" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
       </div>
 
-      <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-header__nav main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__container">
           <ul class="main-nav__list nav-list">
             <li class="main-nav__item">
@@ -625,13 +625,10 @@
     navMain.classList.remove('main-nav--nojs');
 
     navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
+      navMain.classList.toggle('main-nav--closed');
+      navMain.classList.toggle('main-nav--opened');
+      navToggle.classList.toggle('main-header__toggle--closed')
+      navToggle.classList.toggle('main-header__toggle--opened')
     });
   </script>
 </body>
