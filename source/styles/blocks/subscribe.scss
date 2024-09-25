@@ -2,6 +2,21 @@
   position: relative;
 }
 
+.subscribe__form-wrapper {
+  margin: 0 auto;
+  max-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    max-width: 768px;
+
+    @media (min-width: $desktop-width) {
+      margin: 0 auto;
+      max-width: 1440px;
+    }
+  }
+}
+
 .subscribe::before {
   content: "";
   display: block;
