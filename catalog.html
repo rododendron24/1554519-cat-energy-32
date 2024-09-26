@@ -2,10 +2,13 @@
     let navToggle = document.querySelector('.main-header__toggle');
 
     navMain.classList.remove('main-nav--nojs');
-
+    navMain.classList.remove('main-nav--opened');
+    navToggle.classList.remove('main-header__toggle--closed');
+    navMain.classList.add('main-nav--closed');
+    navToggle.classList.add('main-header__toggle--opened');
     navToggle.addEventListener('click', function () {
       navMain.classList.toggle('main-nav--closed');
       navMain.classList.toggle('main-nav--opened');
-      navToggle.classList.toggle('main-header__toggle--closed')
-      navToggle.classList.toggle('main-header__toggle--opened')
+      navToggle.classList.toggle('main-header__toggle--closed');
+      navToggle.classList.toggle('main-header__toggle--opened');
     });</script></body></html>
