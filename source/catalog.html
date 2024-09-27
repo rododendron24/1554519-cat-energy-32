@@ -35,7 +35,7 @@
           </a>
         </div>
         <div class="main-header__toggle-container">
-          <button class="main-header__toggle burger main-header__toggle--closed" type="button">
+          <button class="main-header__toggle burger main-header__toggle--closed hidden" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
@@ -621,6 +621,7 @@
 
     navMain.classList.remove('main-nav--nojs');
     navMain.classList.remove('main-nav--opened');
+    navToggle.classList.remove('hidden');
     navToggle.classList.remove('main-header__toggle--closed');
     navMain.classList.add('main-nav--closed');
     navToggle.classList.add('main-header__toggle--opened');
