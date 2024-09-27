@@ -294,9 +294,9 @@
     let navMain = document.querySelector('.main-nav');
     let navToggle = document.querySelector('.main-header__toggle');
 
+    navToggle.classList.remove('hidden');
     navMain.classList.remove('main-nav--nojs');
     navMain.classList.remove('main-nav--opened');
-    navToggle.classList.remove('hidden');
     navToggle.classList.remove('main-header__toggle--closed');
     navMain.classList.add('main-nav--closed');
     navToggle.classList.add('main-header__toggle--opened');
